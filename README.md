@@ -4,15 +4,20 @@ This repo is part of a C.A. for Theory of Algorithms Module in 4th year Software
 
 The C.A. consists of multiple problems to be completed in the racket programming language.
 
-### cons
-used for building lists.
+#### cons
+Used for building lists.
 
-### list
-shoorthand for creating a list
+#### list
+Shorthand for creating a list
 
-### define
-giving it a name
+#### define
+Giving a function a name and defining what the function takes in 
 
-### car
-used in non-empty lists only and utputs the first element of the list
+#### car
+Used in non-empty lists only and utputs the first element of the list
+
+#### cdr
+
+
+
 
