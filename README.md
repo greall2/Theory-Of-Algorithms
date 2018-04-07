@@ -32,7 +32,18 @@ To download Racket click on the following link and follow instructions.
 > #### car
 > Used in non-empty lists only and utputs the first element of the list
 
-#### cdr
+> #### cdr
+> Returns the list without the first element
+
+> #### cond
+> Chains a series of tests to select a result expression.
+
+
+
+### References:
+* racket docs https://docs.racket-lang.org/
+* DWNLD https://download.racket-lang.org/
+* https://github.com/theory-of-algorithms/example-scheme
 
 
 
