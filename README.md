@@ -30,7 +30,7 @@ To download Racket click on the following link and follow instructions.
 > Giving a function a name and defining what the function takes in 
 
 > #### car
-> Used in non-empty lists only and utputs the first element of the list
+> Used in non-empty lists only and outputs the first element of the list
 
 > #### cdr
 > Returns the list without the first element
@@ -99,21 +99,81 @@ the sublists and their elements doesn’t matter. For example:
 '()
 
 #### hamming-weigth.rkt
-Write a function hamming-weight in Racket that takes a list l as input and returns
+5. Write a function hamming-weight in Racket that takes a list l as input and returns
 the number of non-zero elements in it. For example:
 
 (hamming-weight (list 1 0 1 0 1 1 1 0))
 
 5
 
+#### hamming-distance.rkt
+6. Write a function hamming-distance in Racket that takes two lists and returns the
+number of positions in which they differ.
+
+For example:
+
+(hamming-distance (list 1 0 1 0 1 1 1 0) (list 1 1 1 1 0 0 0 0))
+
+5
+
+#### maj.rkt
+7. Write a function maj in Racket that takes three lists x, y and z of equal 
+length and containing only 0’s and 1’s. It should return a list 
+containing a 1 where two or more of x, y and z contain 1’s, and 0 otherwise. 
+
+For example:
+
+(maj (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1))
+
+'(0 0 0 1 0 1 1 1)
+
+#### chse.rkt
+8. Write a function chse in Racket that takes three lists x, y and z of equal 
+length and containing only 0’s and 1’s. It should return a list containing 
+the elements of y in the positions where x is 1 and the elements of z otherwise. 
+
+For example:
+
+(chse (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1))
+
+'(0 1 0 1 0 0 1 1)
+
+
+#### sod2.rkt
+9. Write a function sod2 in Racket that takes three lists x, y and z of equal length 
+and containing only 0’s and 1’s. It should return a list containing a 1 where 
+the number of 1’s in a given position in x, y and z contains an 
+odd nubmer of 1’s, and 0 otherwise.
+
+For example:
+
+(sod2 (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1))
+
+'(0 1 1 0 1 0 0 1)
+
+#### lstq.rkt
+10. Write a function lstq in Racket that takes as arguments two lists l and m 
+of equal length and containing numbers. It should return d, the 
+distance given by the sum of the square residuals between 
+the numbers in the lists:
+
+This means take the i element of m from the i element of l and square the result
+for all i. Then add all of those to get d.
+
+For example:
+
+ (lstq (list 4.5 5.1 6.2 7.8) (list 1.1 -0.1 6.1 3.8))
+
+54.61
+
 
 
 
 
 ### References:
-* racket docs https://docs.racket-lang.org/
-* DWNLD https://download.racket-lang.org/
-* https://github.com/theory-of-algorithms/example-scheme
+* [Racket Docs](https://docs.racket-lang.org/)
+* [Racket Download](https://download.racket-lang.org/)
+* [Racket example Repo](https://github.com/theory-of-algorithms/example-scheme)
 
 
 
